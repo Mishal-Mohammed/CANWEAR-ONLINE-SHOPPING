@@ -1,0 +1,111 @@
+body{
+    background-color: #121519;
+}
+.navbar-Nav, .svg{
+    margin-right: 61px;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    color: grey;
+}
+#imgSlide{
+    height: 700px;
+    width:1518px;
+}
+#logo{
+    margin-top: 5%;
+    background-color: #fafafacc;
+}
+#svg{
+    background-color: #fafafa;
+    border: 1px solid #fafafa;
+    border-radius: 35px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+hr{
+    display: inline-flex;
+}
+.hr1{
+    width: 250px;
+}
+.hr2{
+    width: 180px;
+}
+.card{
+    margin-left: 2.6%;
+}
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.track {
+    position: relative;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+
+/* button style */
+.btn1{
+    margin: 10% auto;
+    height: auto;
+    background: transparent;
+    color: #fafafa;
+    padding: 0;
+    border: none;
+    text-align: center;
+    --border-right:6px;
+    --text-storke-color:rgba(255,255,255,0.6);
+    --animation-color:#37FF88;
+    --fs-size:3rem;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-storke-color);
+}
+/* hover button */
+
+.hover-text{
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right)solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover  */
+.btn1:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+@media only screen and(max-width:768px) {
+    html,
+    body{
+        width: 100%;
+        overflow: hidden;
+    }
+}

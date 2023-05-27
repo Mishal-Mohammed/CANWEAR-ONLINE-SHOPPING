@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CANWEAR | Men</title>
+    <link rel="icon" type="image/X_icon" href="Logo/LOGO.png" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <!-- <script src="js/bootstrap.js"></script> -->
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style/men.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-light bg-body-tertiary sticky-top"
+      id="navbar"
+    >
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand" onclick="home()">
+          <img src="Logo/5-removebg-preview crop.png" alt="logo" width="60" />
+          CANWEAR
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link active fs-4" href="#" onclick="home()">Home</a>
+            <li class="nav-item dropdown show">
+              <a
+                href="#"
+                onclick="men()"
+                class="nav-link active fs-4"
+                id="navbarDropdown"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Men
+              </a>
+              <div
+                class="dropdown-menu text-center"
+                aria-labelledby="navbarDropdown"
+              >
+                <a href="#shirts" class="dropdown-item"> Shirts </a>
+                <a href="#tShirts" class="dropdown-item"> T-Shirts </a>
+                <a href="#pant" class="dropdown-item"> Pants </a>
+                <a href="#watch" class="dropdown-item"> Watch </a>
+                <a href="#shoe" class="dropdown-item"> Shoes </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown show">
+              <a
+                href="#"
+                onclick="women()"
+                class="nav-link dropdown active fs-4"
+                id="navbarDropdown"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Women
+              </a>
+              <div
+                class="dropdown-menu text-center"
+                aria-labelledby="navbarDropdown"
+              >
+                <a href="#shirts" class="dropdown-item"> Shirts </a>
+                <a href="#" class="dropdown-item"> T-Shirts </a>
+                <a href="#" class="dropdown-item"> Watch </a>
+                <a href="#" class="dropdown-item"> Shoes </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown show" style="margin: auto 3rem">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle active fs-4"
+                id="navbarDropdown"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fa-regular fa-user"></i>
+              </a>
+              <div
+                class="dropdown-menu text-center"
+                aria-labelledby="navbarDropdown"
+              >
+                <a href="#" class="dropdown-item fs-5">
+                  <i class="bi bi-basket"> Order</i>
+                </a>
+                <a href="#" class="dropdown-item fs-5">
+                  <i class="bi bi-cart3 me-3"> Cart</i>
+                </a>
+                <a href="#" class="dropdown-item fs-5" onclick="logout()">
+                  <i class="bi bi-box-arrow-in-right"> Logout</i>
+                </a>
+              </div>
+            </li>
+          </div>
+        </div>
+        <div class="svg" style="margin-right: 50px">
+          <a id="svg" href="" class="nav-link active position-relative"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M6 8a6 6 0 1 1 12 0v2.917c0 .703.228 1.387.65 1.95L20.7 15.6a1.5 1.5 0 0 1-1.2 2.4h-15a1.5 1.5 0 0 1-1.2-2.4l2.05-2.733a3.25 3.25 0 0 0 .65-1.95Zm6 13.5A3.502 3.502 0 0 1 8.645 19h6.71A3.502 3.502 0 0 1 12 21.5Z"
+              ></path>
+            </svg>
+            <span
+              class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger"
+            >
+              9+
+              <span class="visually-hidden">unread messages</span>
+            </span></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <!-- Section Shirts -->
+      <section id="shirts">
+        <h1 class="text-light head1">Shirts</h1>
+        <hr class="hr1 text-light" />
+        <div class="containetr-fluid">
+          <div class="row text-center gap-5 mt-5" style="margin: auto 2rem">
+            <div class="col">
+              <div class="card text-center" style="width: 18rem">
+                <img
+                  src="mens/61Xv6ytnYiL._UL1500_-removebg-preview.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body text-center text-wrap">
+                  <h5 class="card-title">Dennis Lingo Men's Cotton</h5>
+                  <p class="card-text">
+                    Dennis Lingo Men's Cotton Buffalo Check Slim Fit Casual
+                    Shirt with Pocket, Full Sleeve Shirt for Formal & Casual
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#shirtModal"
+                    >BUY NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center" style="width: 18rem">
+                <img
+                  src="mens/61vxe6yBqDL._UL1024_-removebg-preview.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body text-center text-wrap">
+                  <h5 class="card-title">Dennis Lingo Men's Cotton</h5>
+                  <p class="card-text">
+                    Dennis Lingo Men's Cotton Buffalo Check Slim Fit Casual
+                    Shirt with Pocket, Full Sleeve Shirt for Formal & Casual
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#shirtModal"
+                    >BUY NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center" style="width: 18rem">
+                <img
+                  src="mens/61VV0ypElAL._UL1500_-removebg-preview (1).png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body text-center text-wrap">
+                  <h5 class="card-title">Dennis Lingo Men's Cotton</h5>
+                  <p class="card-text">
+                    Dennis Lingo Men's Cotton Buffalo Check Slim Fit Casual
+                    Shirt with Pocket, Full Sleeve Shirt for Formal & Casual
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#shirtModal"
+                    >BUY NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center" style="width: 18rem">
+                <img
+                src="mens/518kb55qKdL._UL1500_-removebg-preview.png "
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body text-center text-wrap">
+                  <h5 class="card-title">Dennis Lingo Men's Cotton</h5>
+                  <p class="card-text">
+                    Dennis Lingo Men's Cotton Buffalo Check Slim Fit Casual
+                    Shirt with Pocket, Full Sleeve Shirt for Formal & Casual
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#shirtModal"
+                    >BUY NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Shirts -->
+        <div
+          class="modal fade"
+          id="shirtModal"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Dennis Lingo
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="column1" style="margin: auto 65px">
+                    <img
+                      id="main-img"
+                      src="mens/61Xv6ytnYiL._UL1500_-removebg-preview.png"
+                      alt=""
+                    />
+                    <div class="sub-img">
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/61Xv6ytnYiL._UL1500_-removebg-preview.png"
+                          alt=""
+                          onclick="shirt(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/61vxe6yBqDL._UL1024_-removebg-preview.png"
+                          alt=""
+                          onclick="shirt(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/61VV0ypElAL._UL1500_-removebg-preview (1).png"
+                          alt=""
+                          onclick="shirt(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/518kb55qKdL._UL1500_-removebg-preview.png "
+                          alt=""
+                          onclick="shirt(this)"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col text-center text-wrap">
+                    <h1>Dennis Lingo Men's Cotton</h1>
+                    <p class="fw-bold">
+                      Dennis Lingo Men's Cotton Buffalo Check Slim Fit Casual
+                      Shirt with Pocket, Full Sleeve Shirt for Formal & Casual
+                    </p>
+                    <h1>₹599</h1>
+                    <div>
+                      <ul class="ul">
+                        <li onclick="mysize(this)" class="sm">S</li>
+                        <li onclick="mysize(this)" class="sm">M</li>
+                        <li onclick="mysize(this)" class="sm">L</li>
+                        <li onclick="mysize(this)" class="sm">XL</li>
+                        <li onclick="mysize(this)" class="sm">XXL</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  onclick="cart()"
+                >
+                  Add Cart
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  onclick="submit()"
+                >
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Shirts -->
+      <section id="tShirts">
+        <h1 class="text-light head1">T-Shirts</h1>
+        <hr class="hr1 text-light" />
+        <div class="row text-center gap-5 mt-5" style="margin: auto 2rem">
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <img
+                src="mens/81-3fFhxstL._UX342_-removebg-preview.jpg"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrap">
+                <h5 class="card-title">Veirdo Men T-Shirt</h5>
+                <p class="card-text">
+                  Veirdo is one of the leading Indian online garment brand that
+                  offers exclusive range of fashions for Men and Boys. Official
+                  merchandiser of Disney and Marvel.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#tShirtModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <img
+                src="mens/71-xWAH7ulL._UY445_-removebg-preview.jpg"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrap">
+                <h5 class="card-title">Veirdo Men T-Shirt</h5>
+                <p class="card-text">
+                  Veirdo is one of the leading Indian online garment brand that
+                  offers exclusive range of fashions for Men and Boys. Official
+                  merchandiser of Disney and Marvel.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#tShirtModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <img
+                src="mens/81rtmUH0D9L._SX342._SX._UX._SY._UY_-removebg-preview.jpg"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrap">
+                <h5 class="card-title">Veirdo Men T-Shirt</h5>
+                <p class="card-text">
+                  Veirdo is one of the leading Indian online garment brand that
+                  offers exclusive range of fashions for Men and Boys. Official
+                  merchandiser of Disney and Marvel.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#tShirtModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <img
+                src="mens/818XIF9QR2L._SX342._SX._UX._SY._UY_-removebg-preview.jpg"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrap">
+                <h5 class="card-title">Veirdo Men T-Shirt</h5>
+                <p class="card-text">
+                  Veirdo is one of the leading Indian online garment brand that
+                  offers exclusive range of fashions for Men and Boys. Official
+                  merchandiser of Disney and Marvel.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#tShirtModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal T-shirts -->
+        <div
+          class="modal fade"
+          id="tShirtModal"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Veirdo Men T-Shirt
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="column1" style="margin: auto 65px">
+                    <img
+                      id="main-img2"
+                      src="mens/81-3fFhxstL._UX342_-removebg-preview.jpg"
+                      alt=""
+                    />
+                    <div class="sub-img">
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/81rtmUH0D9L._SX342._SX._UX._SY._UY_-removebg-preview.jpg"
+                          alt=""
+                          onclick="tshirt(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/818XIF9QR2L._SX342._SX._UX._SY._UY_-removebg-preview.jpg"
+                          alt=""
+                          onclick="tshirt(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/71-xWAH7ulL._UY445_-removebg-preview.jpg"
+                          alt=""
+                          onclick="tshirt(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/81-3fFhxstL._UX342_-removebg-preview.jpg"
+                          alt=""
+                          onclick="tshirt(this)"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col text-center text-wrap">
+                    <h1>Veirdo Men T-Shirt</h1>
+                    <p>
+                      Veirdo is one of the leading Indian online garment brand
+                      that offers exclusive range of fashions for Men and Boys.
+                      Official merchandiser of Disney and Marvel.
+                    </p>
+                    <h1>₹299</h1>
+                    <br /><br />
+                    <div>
+                      <ul class="ul">
+                        <li onclick="mysize(this)" class="sm">S</li>
+                        <li onclick="mysize(this)" class="sm">M</li>
+                        <li onclick="mysize(this)" class="sm">L</li>
+                        <li onclick="mysize(this)" class="sm">XL</li>
+                        <li onclick="mysize(this)" class="sm">XXL</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  onclick="cart()"
+                >
+                  Add Cart
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  onclick="submit()"
+                >
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Pants -->
+      <section id="pant">
+        <h1 class="text-light head1">Pants & Jeans</h1>
+        <hr class="hr2 text-light" />
+        <div class="row text-center gap-5 mt-5" style="margin: auto 2rem">
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <img
+                src="mens/81fQ2LQQ+EL._UX466_-removebg-preview.png"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrap">
+                <h5 class="card-title">Levi's Men's 511 Slim Fit Jeans</h5>
+                <p class="card-text">
+                  A modern slim with room to move; the 511™ slim fit jeans have
+                  added stretch for all-day comfort. They offer a lean look and
+                  is a great alternative to skinny jeans.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pantModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <img
+                src="mens/81j1WfwNHpL._UL1500_.png"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrap">
+                <h5 class="card-title">Levi's Men's 511 Slim Fit Jeans</h5>
+                <p class="card-text">
+                  A modern slim with room to move; the 511™ slim fit jeans have
+                  added stretch for all-day comfort. They offer a lean look and
+                  is a great alternative to skinny jeans.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pantModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <img
+                src="mens/71Ckf-MdebL._UX342_-removebg-preview.jpg"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrap">
+                <h5 class="card-title">Levi's Men's 511 Slim Fit Jeans</h5>
+                <p class="card-text">
+                  A modern slim with room to move; the 511™ slim fit jeans have
+                  added stretch for all-day comfort. They offer a lean look and
+                  is a great alternative to skinny jeans.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pantModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <img
+                src="mens/61GmRXJkIiL._UL1500_-removebg-preview.png"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrap">
+                <h5 class="card-title">Levi's Men's 511 Slim Fit Jeans</h5>
+                <p class="card-text">
+                  A modern slim with room to move; the 511™ slim fit jeans have
+                  added stretch for all-day comfort. They offer a lean look and
+                  is a great alternative to skinny jeans.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pantModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Pants&Jeans -->
+        <div
+          class="modal fade"
+          id="pantModal"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Levi's Men's 511 Slim Fit Jeans
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="column1" style="margin: auto 65px">
+                    <img
+                      id="main-img3"
+                      src="mens/81fQ2LQQ+EL._UX466_-removebg-preview.png"
+                      alt=""
+                    />
+                    <div class="sub-img">
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/81fQ2LQQ+EL._UX466_-removebg-preview.png"
+                          alt=""
+                          onclick="pant(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/81j1WfwNHpL._UL1500_.png"
+                          alt=""
+                          onclick="pant(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/71Ckf-MdebL._UX342_-removebg-preview.jpg"
+                          alt=""
+                          onclick="pant(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img class="images"
+                        src="mens/61GmRXJkIiL._UL1500_-removebg-preview.png"
+                        alt="" onclick="pant(this)" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col text-center text-wrap">
+                    <h1>Levi's Men's 511 Slim Fit Jeans</h1>
+                    <p>
+                      A modern slim with room to move; the 511™ slim fit jeans
+                      have added stretch for all-day comfort. They offer a lean
+                      look and is a great alternative to skinny jeans.
+                    </p>
+                    <h1>₹699</h1>
+                    <br /><br />
+                    <div>
+                      <ul class="ul">
+                        <li onclick="mysize(this)" class="sm">S</li>
+                        <li onclick="mysize(this)" class="sm">M</li>
+                        <li onclick="mysize(this)" class="sm">L</li>
+                        <li onclick="mysize(this)" class="sm">XL</li>
+                        <li onclick="mysize(this)" class="sm">XXL</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  onclick="cart()"
+                >
+                  Add Cart
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  onclick="submit()"
+                >
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Watch -->
+      <section id="watch">
+        <h1 class="text-light head1">Watch</h1>
+        <hr class="hr2 text-light" />
+        <div class="row text-center gap-5 mt-5" style="margin: auto 2rem">
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <img
+                src="mens/Best_Sellers-removebg-preview.png"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrap">
+                <h5 class="card-title">TIMEX</h5>
+                <p class="card-text">Analog Black Dial Men's Watch-TW000R438</p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#watchModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem; height: 37rem">
+              <img
+                src="mens/Casio_F-91W-1XY_classic_digital_watch___ASOS-removebg-preview.png"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div
+                class="card-body text-center text-wrap"
+                style="margin-top: 60px"
+              >
+                <h5 class="card-title">TIMEX</h5>
+                <p class="card-text">Analog Black Dial Men's Watch-TW000R438</p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#watchModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem; height: 37rem">
+              <img
+                src="mens/51vSiDswk6L._UX342_-removebg-preview.png"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div
+                class="card-body text-center text-wrap"
+                style="margin-top: 140px"
+              >
+                <h5 class="card-title">TIMEX</h5>
+                <p class="card-text">Analog Black Dial Men's Watch-TW000R438</p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#watchModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem; height: 37rem">
+              <img
+                src="mens/Pre-Owned_and_Used_Rolex__1_-removebg-preview.png"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrapx">
+                <h5 class="card-title">TIMEX</h5>
+                <p class="card-text">Analog Black Dial Men's Watch-TW000R438</p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#watchModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Watch -->
+        <div
+          class="modal fade"
+          id="watchModal"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">TIMEX</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="column1" style="margin: auto 65px">
+                    <img
+                      id="main-img4"
+                      src="mens/Best_Sellers-removebg-preview.png"
+                      alt=""
+                    />
+                    <div class="sub-img">
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/Best_Sellers-removebg-preview.png"
+                          alt=""
+                          onclick="watch(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/Casio_F-91W-1XY_classic_digital_watch___ASOS-removebg-preview.png"
+                          alt=""
+                          onclick="watch(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/51vSiDswk6L._UX342_-removebg-preview.png"
+                          alt=""
+                          onclick="watch(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/Pre-Owned_and_Used_Rolex__1_-removebg-preview.png"
+                          alt=""
+                          onclick="watch(this)"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col text-center text-wrap">
+                    <h1>TIMEX</h1>
+                    <p>Analog Black Dial Men's Watch-TW000R438</p>
+                    <h1>₹899</h1>
+                    <br /><br />
+                    <div>
+                      <ul class="ul">
+                        <li onclick="mysize(this)" class="sm">S</li>
+                        <li onclick="mysize(this)" class="sm">M</li>
+                        <li onclick="mysize(this)" class="sm">L</li>
+                        <li onclick="mysize(this)" class="sm">XL</li>
+                        <li onclick="mysize(this)" class="sm">XXL</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  onclick="cart()"
+                >
+                  Add Cart
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  onclick="submit()"
+                >
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Shoes -->
+      <section id="shoe">
+        <h1 class="text-light head1">Shoes</h1>
+        <hr class="hr2 text-light" />
+        <div class="row text-center gap-5 mt-5" style="margin: auto 2rem">
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <img
+                src="mens/71TvZRUbVCL._UY625_-removebg-preview.png"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrap">
+                <h5 class="card-title">Bourge</h5>
+                <p class="card-text">Men's Loire-z126 Running Shoes</p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#shoeModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <img
+                src="mens/71YjVr2O5PL._SY625._SX._UX._SY._UY_-removebg-preview.png"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrap">
+                <h5 class="card-title">Bourge</h5>
+                <p class="card-text">Men's Loire-z126 Running Shoes</p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#shoeModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <img
+                src="mens/613QVGgweAL._SY625._SX._UX._SY._UY_-removebg-preview.png"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrap">
+                <h5 class="card-title">Bourge</h5>
+                <p class="card-text">Men's Loire-z126 Running Shoes</p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#shoeModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center" style="width: 18rem">
+              <img
+                src="mens/71YjVr2O5PL._SY625._SX._UX._SY._UY_-removebg-preview.png"
+                class="card-img-top"
+                alt="..."
+                style="height: max-content"
+              />
+              <div class="card-body text-center text-wrap">
+                <h5 class="card-title">Bourge</h5>
+                <p class="card-text">Men's Loire-z126 Running Shoes</p>
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#shoeModal"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal Shoe -->
+        <div
+          class="modal fade"
+          id="shoeModal"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Bourge</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="column1" style="margin: auto 65px">
+                    <img
+                      id="main-img5"
+                      src="mens/71TvZRUbVCL._UY625_-removebg-preview.png"
+                      alt=""
+                    />
+                    <div class="sub-img">
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/71TvZRUbVCL._UY625_-removebg-preview.png"
+                          alt=""
+                          onclick="shoe(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/613QVGgweAL._SY625._SX._UX._SY._UY_-removebg-preview.png"
+                          alt=""
+                          onclick="shoe(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/71YjVr2O5PL._SY625._SX._UX._SY._UY_-removebg-preview.png"
+                          alt=""
+                          onclick="shoe(this)"
+                        />
+                      </div>
+                      <div class="img">
+                        <img
+                          class="images"
+                          src="mens/Steve_Madden_M-Fallon_Shoe_-_Men_s-removebg-preview.png"
+                          alt=""
+                          onclick="shoe(this)"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col text-center text-wrap">
+                    <h1>Bourge</h1>
+                    <p>Men's Loire-z126 Running Shoes</p>
+                    <h1>₹999</h1>
+                    <br /><br />
+                    <div>
+                      <ul class="ul">
+                        <li onclick="mysize(this)" class="sm">S</li>
+                        <li onclick="mysize(this)" class="sm">M</li>
+                        <li onclick="mysize(this)" class="sm">L</li>
+                        <li onclick="mysize(this)" class="sm">XL</li>
+                        <li onclick="mysize(this)" class="sm">XXL</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  onclick="cart()"
+                >
+                  Add Cart
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  onclick="submit()"
+                >
+                  Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a
+              href="/"
+              class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+            >
+              <img
+                src="Logo/6-removebg-preview.png"
+                alt="Logo"
+                width="50"
+                class="img-fluid"
+              />
+            </a>
+            <span class="mb-3 mb-md-0 text-light"
+              >© 2021 CANWEAR Company, Inc</span
+            >
+          </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="text-light" href="#"
+                ><i class="fa-brands fa-twitter text-primary"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-light" href="#"
+                ><i class="fa-brands fa-instagram text-danger"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-light" href="#"
+                ><i class="fa-brands fa-facebook text-primary"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-light" href="#"
+                ><i class="fa-brands fa-shopify text-success"></i
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <script src="javascript/men.js"></script>
+  </body>
+</html>

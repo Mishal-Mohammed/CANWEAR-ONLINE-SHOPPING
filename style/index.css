@@ -1,0 +1,44 @@
+body {
+    background-color: #121519;
+}
+
+.scroll-down-btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.h1 {
+    text-align: center;
+    margin-top: 10%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100%;
+}
+
+#login {
+    margin-top: 10%;
+}
+
+.b1 {
+    font-size: xx-large;
+}
+
+.row {
+    cursor: pointer;
+}
+
+.a1 {
+    text-decoration: none;
+}
+
+#q1:hover {
+    color: rgb(18, 88, 18);
+}
+
+.hover01 img {
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.hover01:hover img {
+    transform: scale(1.1);
+}
